@@ -1,0 +1,292 @@
+[
+    {
+        "cliente": "cliente016",
+        "total_gasto": 17238.2,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_045",
+        "total_gasto": 3605.96,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "Cliente_017",
+        "total_gasto": 34462.64,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_037",
+        "total_gasto": 29281.2,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_041",
+        "total_gasto": 19516.45,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_011",
+        "total_gasto": 32896.41,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_021",
+        "total_gasto": 18608.7,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_030",
+        "total_gasto": 13449.47,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_033",
+        "total_gasto": 10847.97,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_008",
+        "total_gasto": 12025.04,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_006",
+        "total_gasto": 65905.09,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_028",
+        "total_gasto": 9653.96,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_029",
+        "total_gasto": 36318.05,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "cliente037",
+        "total_gasto": 17615.97,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_044",
+        "total_gasto": 21252.51,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_009",
+        "total_gasto": 50827.96,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_001",
+        "total_gasto": 3659.75,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "cliente014",
+        "total_gasto": 860.56,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "Cliente_042",
+        "total_gasto": 35356.89,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_010",
+        "total_gasto": 15683.95,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_003",
+        "total_gasto": 35525.98,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_050",
+        "total_gasto": 34892.22,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_025",
+        "total_gasto": 8531.02,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_013",
+        "total_gasto": 6449.54,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "cliente008",
+        "total_gasto": 10252.89,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_040",
+        "total_gasto": 8536.15,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_020",
+        "total_gasto": 58459.54,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_043",
+        "total_gasto": 481.6,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "Cliente_034",
+        "total_gasto": 52035.6,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_016",
+        "total_gasto": 14415.22,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_022",
+        "total_gasto": 26226.36,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_032",
+        "total_gasto": 20888.06,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "cliente040",
+        "total_gasto": 396.78,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "Cliente_004",
+        "total_gasto": 10102.74,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_048",
+        "total_gasto": 27101.02,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_005",
+        "total_gasto": 17200.67,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_031",
+        "total_gasto": 18432.7,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_039",
+        "total_gasto": 59406.9,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_015",
+        "total_gasto": 4734.92,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "Cliente_038",
+        "total_gasto": 15780.44,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_035",
+        "total_gasto": 2257.06,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "Cliente_012",
+        "total_gasto": 38111.8,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_024",
+        "total_gasto": 49146.94,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_018",
+        "total_gasto": 13810.07,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_023",
+        "total_gasto": 17207.52,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_007",
+        "total_gasto": 6521.52,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_049",
+        "total_gasto": 18654.2,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_047",
+        "total_gasto": 38291.74,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_036",
+        "total_gasto": 63433.04,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_027",
+        "total_gasto": 37349.85,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_014",
+        "total_gasto": 20054.4,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "cliente012",
+        "total_gasto": 1437.32,
+        "segmento": "Bronze"
+    },
+    {
+        "cliente": "Cliente_026",
+        "total_gasto": 21061.58,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "cliente044",
+        "total_gasto": 12255.18,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_019",
+        "total_gasto": 40731.05,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "CLIENTE011",
+        "total_gasto": 23495.36,
+        "segmento": "Ouro"
+    },
+    {
+        "cliente": "Cliente_046",
+        "total_gasto": 6643.51,
+        "segmento": "Prata"
+    },
+    {
+        "cliente": "Cliente_002",
+        "total_gasto": 967.08,
+        "segmento": "Bronze"
+    }
+]
