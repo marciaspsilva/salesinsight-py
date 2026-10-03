@@ -118,7 +118,7 @@ def gerar_dataset_vendas(caminho_csv="vendas.csv", n_registros=200, seed=42):
     print(f"Dataset gerado com {n_registros} registros em {caminho_csv}.")
 
 
-gerar_dataset_vendas()
+#gerar_dataset_vendas()
 
 """### Requisito Funcional 02 – Inspecionar e descrever os dados"""
 
@@ -158,7 +158,7 @@ def inspecionar_dados(registros):
 
 
 arquivo = 'vendas.csv'
-registros = carregar_dataset_csv(arquivo)
+#registros = carregar_dataset_csv(arquivo)
 #inspecionar_dados(registros)
 
 """### Requisito Funcional 03 – Limpar e tratar os dados (datetime e regex)"""
@@ -268,8 +268,7 @@ def criar_colunas_derivadas(registros):
             registro["faixa_receita_item"] = "Alto valor"
     return registros
 
-#registros = criar_colunas_derivadas(registros_limpos)
-registros_limpos = criar_colunas_derivadas(registros_limpos)
+#registros_limpos = criar_colunas_derivadas(registros_limpos)
 
 from collections import defaultdict
 
@@ -514,37 +513,33 @@ def exibir_segmentacao(clientes):
 
 """### Requisito Funcional 07 – Organizar o código em funções reutilizáveis"""
 
-# Função de ordem superior
 def processar_coluna(registros, coluna, funcao_transformacao, nome_saida=None):
-    """
-    Aplica uma funcao de transformacao a um campo de cada registro.
-    Demonstra o uso de funcoes como argumento (funcao de ordem superior).
-    """
     nome_saida = nome_saida or f"{coluna}_transformado"
     for linha in registros:
         linha[nome_saida] = funcao_transformacao(linha[coluna])
     return registros
 
-registros = registros_limpos
+def demonstrar_reutilizacao(registros_entrada):
+    print("\n=== FUNÇÃO DE ORDEM SUPERIOR ===")
 
-# uso com funcoes lambda em contextos distintos
-registros = processar_coluna(
-    registros,
-    "receita_total",
-    lambda x: round(x / 1000, 2),
-    nome_saida="receita_em_milhares",
-)
+    processar_coluna(
+        registros_entrada,
+        "receita_total",
+        lambda x: round(x / 1000, 2),
+        nome_saida="receita_em_milhares",
+    )
 
-registros = processar_coluna(
-    registros,
-    "quantidade",
-    lambda q: "Alto Volume" if q > 5 else "Baixo Volume",
-    nome_saida="perfil_volume",
-)
+    processar_coluna(
+        registros_entrada,
+        "quantidade",
+        lambda q: "Alto Volume" if q > 5 else "Baixo Volume",
+        nome_saida="perfil_volume",
+    )
 
-print("\nPrimeiros registros:")
-for linha in registros[:5]:
-    print(linha)
+    print("\nPrimeiros 5 registros")
+    for linha in registros_entrada[:5]:
+        print(linha)
+    print("=" * 60)
 
 """### Requisito Funcional 08 – Exportar resultados em CSV e JSON"""
 
@@ -584,9 +579,11 @@ def exportar_resultados(metricas, clientes):
 
     print(f"\nJSON gravado e lido: {conferencia}")
 
-exportar_resultados(metricas, clientes)
+#exportar_resultados(metricas, clientes)
 
 """### Requisito Funcional 09 – Executar o fluxo completo (Ponto de Entrada)"""
+
+from zoneinfo import ZoneInfo
 
 def main():
     """Executa o fluxo completo do SalesInsight PY."""
@@ -597,13 +594,17 @@ def main():
     # Etapa 0 - garantir a existencia do dataset
     if not os.path.exists("vendas.csv"):
         gerar_dataset_vendas("vendas.csv")
+    else:
+        print("Arquivo 'vendas.csv' já gerado.")
 
     # Etapas 1 a 6 - fluxo pelas funcoes
     registros = carregar_dataset_csv("vendas.csv")
     inspecionar_dados(registros)
     registros_limpos, relatorio = limpar_dados(registros)
     registros_limpos = criar_colunas_derivadas(registros_limpos)
-    print(registros_limpos)
+
+    # Função de ordem superior
+    demonstrar_reutilizacao(registros_limpos)
 
     metricas = calcular_metricas(registros_limpos)
     exibir_metricas(metricas)
@@ -612,7 +613,8 @@ def main():
     exportar_resultados(metricas, clientes)
     analisar_trimestre(registros_limpos)
 
-    print("\n[CONCLUIDO] Fluxo finalizado com sucesso.")
+    agora = datetime.now(ZoneInfo("America/Sao_Paulo"))
+    print(f"\n[CONCLUIDO] Fluxo finalizado com sucesso às {agora.strftime('%d/%m/%Y %H:%M:%S')}.")
 
 
 if __name__ == "__main__":
